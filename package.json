@@ -2,7 +2,7 @@
   "name": "verify-loop-website",
   "version": "1.0.0",
   "private": true,
-  "homepage": "https://verifyloop.net",
+  "homepage": "https://corythchambers.github.io/verify-loop",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.3.0",
