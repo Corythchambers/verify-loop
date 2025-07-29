@@ -13,13 +13,14 @@ const Home = () => {
       >
         <div className="container">
           <h1 id="hero-heading">
-            Professional Quality Assurance & Automation Engineering
+            Professional Web Development & Quality Assurance Services
           </h1>
           <p>
-            Verify Loop LLC delivers expert QA consulting services to ensure
-            your software meets the highest quality standards. From
-            comprehensive testing strategies to advanced automation frameworks,
-            we help you build confidence in your software.
+            Verify Loop LLC delivers expert web development and QA consulting
+            services to ensure your software meets the highest quality
+            standards. From custom web applications to comprehensive testing
+            strategies and advanced automation frameworks, we help you build
+            confidence in your software.
           </p>
           <div
             className="hero-buttons"
@@ -30,7 +31,7 @@ const Home = () => {
               to="/services"
               className="btn"
               data-testid="hero-services-btn"
-              aria-label="View our quality assurance services"
+              aria-label="View our web development and quality assurance services"
             >
               View Our Services
             </Link>
@@ -38,7 +39,7 @@ const Home = () => {
               to="/contact"
               className="btn btn-secondary"
               data-testid="hero-contact-btn"
-              aria-label="Get a consultation for your QA needs"
+              aria-label="Get a consultation for your web development and QA needs"
             >
               Get Consultation
             </Link>
@@ -57,14 +58,29 @@ const Home = () => {
             Our Core Services
           </h2>
           <p className="section-subtitle">
-            Comprehensive QA and automation solutions tailored to your business
-            needs
+            Comprehensive web development and QA solutions tailored to your
+            business needs
           </p>
           <div
             className="grid grid-3"
             role="list"
             aria-label="Core services we offer"
           >
+            <div
+              className="card"
+              data-testid="service-web-development"
+              role="listitem"
+            >
+              <div className="card-content">
+                <h3 className="card-title">Web Development</h3>
+                <p className="card-text">
+                  Custom web application development using modern technologies
+                  including React, Node.js, and cloud platforms. We build
+                  scalable, user-friendly applications that drive business
+                  growth and enhance user experience.
+                </p>
+              </div>
+            </div>
             <div
               className="card"
               data-testid="service-qa-testing"
@@ -95,21 +111,6 @@ const Home = () => {
                 </p>
               </div>
             </div>
-            <div
-              className="card"
-              data-testid="service-consulting"
-              role="listitem"
-            >
-              <div className="card-content">
-                <h3 className="card-title">QA Consulting & Training</h3>
-                <p className="card-text">
-                  Strategic QA consulting to improve your testing processes,
-                  team training programs, and implementation of best practices
-                  to build internal QA capabilities and ensure long-term
-                  success.
-                </p>
-              </div>
-            </div>
           </div>
         </div>
       </section>
@@ -129,7 +130,7 @@ const Home = () => {
                   color: "#2563eb",
                 }}
               >
-                Proven Expertise
+                Full-Stack Expertise
               </h3>
               <p
                 style={{
@@ -138,10 +139,11 @@ const Home = () => {
                   lineHeight: "1.6",
                 }}
               >
-                With years of experience in quality assurance and automation
-                engineering, we bring deep technical knowledge and industry best
-                practices to every project. Our expertise spans multiple
-                domains, technologies, and testing methodologies.
+                With expertise in both web development and quality assurance, we
+                offer end-to-end solutions that ensure your applications are not
+                only built correctly but also thoroughly tested. Our full-stack
+                approach means better integration and fewer issues down the
+                line.
               </p>
 
               <h3
@@ -156,8 +158,8 @@ const Home = () => {
               <p style={{ color: "#666", lineHeight: "1.6" }}>
                 We understand that every organization has unique needs. Our
                 approach involves thorough analysis of your current processes,
-                challenges, and goals to develop customized QA strategies that
-                align with your business objectives.
+                challenges, and goals to develop customized development and QA
+                strategies that align with your business objectives.
               </p>
             </div>
             <div>
@@ -177,10 +179,10 @@ const Home = () => {
                   lineHeight: "1.6",
                 }}
               >
-                We leverage the latest testing tools and frameworks including
-                Selenium WebDriver, Cypress, Playwright, REST Assured, JMeter,
-                and cloud-based testing platforms to deliver efficient and
-                scalable testing solutions.
+                We leverage the latest web development and testing tools
+                including React, Node.js, TypeScript, Selenium WebDriver,
+                Cypress, Playwright, REST Assured, and cloud-based platforms to
+                deliver efficient and scalable solutions.
               </p>
 
               <h3
@@ -224,10 +226,10 @@ const Home = () => {
                   className="card-text"
                   style={{ fontStyle: "italic", marginBottom: "1rem" }}
                 >
-                  "Verify Loop transformed our testing process completely. Their
-                  automation framework reduced our testing time by 70% while
-                  significantly improving our defect detection rate. The team's
-                  expertise and professionalism were outstanding."
+                  "Verify Loop built our entire web application from scratch and
+                  implemented a comprehensive testing strategy. Their full-stack
+                  expertise meant we got a high-quality product that was
+                  thoroughly tested and ready for production."
                 </p>
                 <div
                   style={{ borderTop: "1px solid #eee", paddingTop: "1rem" }}
@@ -275,13 +277,13 @@ const Home = () => {
             style={{ fontSize: "2.5rem", marginBottom: "1rem" }}
             id="cta-heading"
           >
-            Ready to Improve Your Software Quality?
+            Ready to Build Better Software?
           </h2>
           <p
             style={{ fontSize: "1.2rem", marginBottom: "2rem", opacity: "0.9" }}
           >
-            Let's discuss how Verify Loop can help you achieve your quality
-            assurance goals.
+            Let's discuss how Verify Loop can help you achieve your web
+            development and quality assurance goals.
           </p>
           <div
             style={{
@@ -298,7 +300,7 @@ const Home = () => {
               className="btn"
               style={{ backgroundColor: "white", color: "#2563eb" }}
               data-testid="cta-contact-btn"
-              aria-label="Start a consultation with our QA experts"
+              aria-label="Start a consultation with our web development and QA experts"
             >
               Start a Consultation
             </Link>
@@ -306,7 +308,7 @@ const Home = () => {
               to="/services"
               className="btn btn-secondary-dark"
               data-testid="cta-services-btn"
-              aria-label="Learn more about our QA and testing services"
+              aria-label="Learn more about our web development and QA services"
             >
               Learn More About Our Services
             </Link>

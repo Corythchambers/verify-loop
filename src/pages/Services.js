@@ -8,10 +8,11 @@ const Services = () => {
       {/* Hero Section */}
       <section className="hero">
         <div className="container">
-          <h1>Quality Assurance & Automation Services</h1>
+          <h1>Web Development & Quality Assurance Services</h1>
           <p>
-            Comprehensive QA solutions designed to improve your software
-            quality, accelerate delivery, and build confidence in your products.
+            Comprehensive web development and QA solutions designed to build
+            high-quality applications, improve software quality, accelerate
+            delivery, and build confidence in your products.
           </p>
         </div>
       </section>
@@ -21,6 +22,25 @@ const Services = () => {
         <div className="container">
           <h2 className="section-title">Core Services</h2>
           <div className="grid grid-2">
+            <div className="card" data-testid="service-web-development">
+              <div className="card-content">
+                <h3 className="card-title">Web Application Development</h3>
+                <p className="card-text" style={{ marginBottom: "1.5rem" }}>
+                  Custom web application development using modern technologies
+                  and best practices to create scalable, user-friendly
+                  applications that drive business growth.
+                </p>
+                <ul style={{ color: "#666", lineHeight: "1.8" }}>
+                  <li>Frontend development (React, Vue.js, Angular)</li>
+                  <li>Backend development (Node.js, Python, Java)</li>
+                  <li>Full-stack application development</li>
+                  <li>API development and integration</li>
+                  <li>Database design and implementation</li>
+                  <li>Cloud deployment and DevOps</li>
+                </ul>
+              </div>
+            </div>
+
             <div className="card" data-testid="service-manual-testing">
               <div className="card-content">
                 <h3 className="card-title">Manual Testing & QA Strategy</h3>
@@ -39,24 +59,78 @@ const Services = () => {
                 </ul>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
 
-            <div className="card" data-testid="service-test-automation">
+      {/* Web Development Services */}
+      <section className="section" style={{ backgroundColor: "#f8fafc" }}>
+        <div className="container">
+          <h2 className="section-title">Web Development Services</h2>
+          <div className="grid grid-3">
+            <div className="card" data-testid="service-frontend">
               <div className="card-content">
-                <h3 className="card-title">Test Automation Engineering</h3>
-                <p className="card-text" style={{ marginBottom: "1.5rem" }}>
-                  Design, development, and implementation of robust automation
-                  frameworks tailored to your technology stack and testing
-                  requirements.
+                <h3 className="card-title">Frontend Development</h3>
+                <p className="card-text">
+                  Modern, responsive frontend development using the latest
+                  frameworks and technologies to create engaging user
+                  experiences.
                 </p>
-                <ul style={{ color: "#666", lineHeight: "1.8" }}>
-                  <li>
-                    Web application automation (Selenium, Cypress, Playwright)
-                  </li>
-                  <li>API testing automation (REST, GraphQL, SOAP)</li>
-                  <li>Mobile application testing</li>
-                  <li>Database testing automation</li>
-                  <li>Cross-browser and cross-platform testing</li>
-                  <li>Test data management and setup</li>
+                <ul
+                  style={{
+                    color: "#666",
+                    lineHeight: "1.8",
+                    marginTop: "1rem",
+                  }}
+                >
+                  <li>React, Vue.js, Angular applications</li>
+                  <li>Responsive design and mobile-first approach</li>
+                  <li>Progressive Web Apps (PWA)</li>
+                  <li>Performance optimization</li>
+                </ul>
+              </div>
+            </div>
+
+            <div className="card" data-testid="service-backend">
+              <div className="card-content">
+                <h3 className="card-title">Backend Development</h3>
+                <p className="card-text">
+                  Robust backend systems and APIs built with scalability and
+                  security in mind to support your business applications.
+                </p>
+                <ul
+                  style={{
+                    color: "#666",
+                    lineHeight: "1.8",
+                    marginTop: "1rem",
+                  }}
+                >
+                  <li>Node.js, Python, Java backends</li>
+                  <li>RESTful and GraphQL APIs</li>
+                  <li>Database design and optimization</li>
+                  <li>Authentication and authorization</li>
+                </ul>
+              </div>
+            </div>
+
+            <div className="card" data-testid="service-devops">
+              <div className="card-content">
+                <h3 className="card-title">DevOps & Deployment</h3>
+                <p className="card-text">
+                  Streamlined deployment processes and infrastructure management
+                  to ensure reliable, scalable application delivery.
+                </p>
+                <ul
+                  style={{
+                    color: "#666",
+                    lineHeight: "1.8",
+                    marginTop: "1rem",
+                  }}
+                >
+                  <li>CI/CD pipeline setup</li>
+                  <li>Cloud deployment (AWS, Azure, GCP)</li>
+                  <li>Docker containerization</li>
+                  <li>Monitoring and logging</li>
                 </ul>
               </div>
             </div>
@@ -64,11 +138,36 @@ const Services = () => {
         </div>
       </section>
 
-      {/* Specialized Services */}
-      <section className="section" style={{ backgroundColor: "#f8fafc" }}>
+      {/* Specialized Testing Services */}
+      <section className="section">
         <div className="container">
           <h2 className="section-title">Specialized Testing Services</h2>
           <div className="grid grid-3">
+            <div className="card" data-testid="service-test-automation">
+              <div className="card-content">
+                <h3 className="card-title">Test Automation Engineering</h3>
+                <p className="card-text">
+                  Design, development, and implementation of robust automation
+                  frameworks tailored to your technology stack and testing
+                  requirements.
+                </p>
+                <ul
+                  style={{
+                    color: "#666",
+                    lineHeight: "1.8",
+                    marginTop: "1rem",
+                  }}
+                >
+                  <li>
+                    Web application automation (Selenium, Cypress, Playwright)
+                  </li>
+                  <li>API testing automation (REST, GraphQL, SOAP)</li>
+                  <li>Mobile application testing</li>
+                  <li>Database testing automation</li>
+                </ul>
+              </div>
+            </div>
+
             <div className="card" data-testid="service-performance">
               <div className="card-content">
                 <h3 className="card-title">Performance Testing</h3>
@@ -114,34 +213,12 @@ const Services = () => {
                 </ul>
               </div>
             </div>
-
-            <div className="card" data-testid="service-accessibility">
-              <div className="card-content">
-                <h3 className="card-title">Accessibility Testing</h3>
-                <p className="card-text">
-                  Ensure your applications are accessible to all users and
-                  comply with accessibility standards such as WCAG 2.1 AA.
-                </p>
-                <ul
-                  style={{
-                    color: "#666",
-                    lineHeight: "1.8",
-                    marginTop: "1rem",
-                  }}
-                >
-                  <li>WCAG compliance testing</li>
-                  <li>Screen reader compatibility</li>
-                  <li>Keyboard navigation testing</li>
-                  <li>Color contrast validation</li>
-                </ul>
-              </div>
-            </div>
           </div>
         </div>
       </section>
 
       {/* Consulting & Training */}
-      <section className="section">
+      <section className="section" style={{ backgroundColor: "#f8fafc" }}>
         <div className="container">
           <h2 className="section-title">Consulting & Training Services</h2>
           <div className="grid grid-2">
@@ -168,17 +245,17 @@ const Services = () => {
               <div className="card-content">
                 <h3 className="card-title">Training & Skill Development</h3>
                 <p className="card-text" style={{ marginBottom: "1.5rem" }}>
-                  Comprehensive training programs to build internal QA
-                  capabilities and keep your team current with industry best
-                  practices.
+                  Comprehensive training programs to build internal development
+                  and QA capabilities and keep your team current with industry
+                  best practices.
                 </p>
                 <ul style={{ color: "#666", lineHeight: "1.8" }}>
+                  <li>Web development best practices</li>
                   <li>QA fundamentals and best practices</li>
                   <li>Test automation tool training</li>
                   <li>Advanced testing techniques</li>
                   <li>Custom workshops and seminars</li>
                   <li>Mentoring and coaching</li>
-                  <li>Certification preparation</li>
                 </ul>
               </div>
             </div>
@@ -187,7 +264,7 @@ const Services = () => {
       </section>
 
       {/* Technology Stack */}
-      <section className="section" style={{ backgroundColor: "#f8fafc" }}>
+      <section className="section">
         <div className="container">
           <h2 className="section-title">Technology Stack</h2>
           <p className="section-subtitle">
@@ -204,7 +281,45 @@ const Services = () => {
                   color: "#2563eb",
                 }}
               >
-                Automation Tools & Frameworks
+                Web Development Technologies
+              </h3>
+              <div className="grid grid-2" style={{ gap: "2rem" }}>
+                <div>
+                  <h4 style={{ marginBottom: "0.5rem", color: "#1a1a1a" }}>
+                    Frontend
+                  </h4>
+                  <ul style={{ color: "#666", lineHeight: "1.8" }}>
+                    <li>React, Vue.js, Angular</li>
+                    <li>TypeScript, JavaScript</li>
+                    <li>HTML5, CSS3, SASS</li>
+                    <li>Redux, Vuex, NgRx</li>
+                    <li>Webpack, Vite</li>
+                  </ul>
+                </div>
+                <div>
+                  <h4 style={{ marginBottom: "0.5rem", color: "#1a1a1a" }}>
+                    Backend
+                  </h4>
+                  <ul style={{ color: "#666", lineHeight: "1.8" }}>
+                    <li>Node.js, Express</li>
+                    <li>Python, Django, Flask</li>
+                    <li>Java, Spring Boot</li>
+                    <li>PostgreSQL, MongoDB</li>
+                    <li>Redis, Elasticsearch</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <h3
+                style={{
+                  fontSize: "1.5rem",
+                  marginBottom: "1.5rem",
+                  color: "#2563eb",
+                }}
+              >
+                Testing & Automation Tools
               </h3>
               <div className="grid grid-2" style={{ gap: "2rem" }}>
                 <div>
@@ -233,54 +348,42 @@ const Services = () => {
                 </div>
               </div>
             </div>
-
-            <div>
-              <h3
-                style={{
-                  fontSize: "1.5rem",
-                  marginBottom: "1.5rem",
-                  color: "#2563eb",
-                }}
-              >
-                Supporting Technologies
-              </h3>
-              <div className="grid grid-2" style={{ gap: "2rem" }}>
-                <div>
-                  <h4 style={{ marginBottom: "0.5rem", color: "#1a1a1a" }}>
-                    Languages
-                  </h4>
-                  <ul style={{ color: "#666", lineHeight: "1.8" }}>
-                    <li>Java</li>
-                    <li>JavaScript/TypeScript</li>
-                    <li>Python</li>
-                    <li>C#</li>
-                    <li>Ruby</li>
-                  </ul>
-                </div>
-                <div>
-                  <h4 style={{ marginBottom: "0.5rem", color: "#1a1a1a" }}>
-                    CI/CD & Cloud
-                  </h4>
-                  <ul style={{ color: "#666", lineHeight: "1.8" }}>
-                    <li>Jenkins</li>
-                    <li>GitHub Actions</li>
-                    <li>Azure DevOps</li>
-                    <li>Docker</li>
-                    <li>AWS/Azure/GCP</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
       </section>
 
       {/* Service Packages */}
-      <section className="section">
+      <section className="section" style={{ backgroundColor: "#f8fafc" }}>
         <div className="container">
           <h2 className="section-title">Service Packages</h2>
           <div className="grid grid-3">
-            <div className="card" data-testid="package-starter">
+            <div className="card" data-testid="package-web-development">
+              <div className="card-content">
+                <h3 className="card-title">Web Development Package</h3>
+                <p className="card-text" style={{ marginBottom: "1.5rem" }}>
+                  Complete web application development from concept to
+                  deployment, including frontend, backend, and database design.
+                </p>
+                <ul style={{ color: "#666", lineHeight: "1.8" }}>
+                  <li>Requirements analysis and planning</li>
+                  <li>Full-stack development</li>
+                  <li>Database design and implementation</li>
+                  <li>Testing and quality assurance</li>
+                  <li>Deployment and launch support</li>
+                </ul>
+                <div style={{ marginTop: "2rem" }}>
+                  <Link
+                    to="/contact"
+                    className="btn"
+                    data-testid="package-web-development-contact"
+                  >
+                    Start Project
+                  </Link>
+                </div>
+              </div>
+            </div>
+
+            <div className="card" data-testid="package-qa-assessment">
               <div className="card-content">
                 <h3 className="card-title">QA Assessment Package</h3>
                 <p className="card-text" style={{ marginBottom: "1.5rem" }}>
@@ -298,7 +401,7 @@ const Services = () => {
                   <Link
                     to="/contact"
                     className="btn"
-                    data-testid="package-starter-contact"
+                    data-testid="package-qa-assessment-contact"
                   >
                     Get Started
                   </Link>
@@ -306,7 +409,7 @@ const Services = () => {
               </div>
             </div>
 
-            <div className="card" data-testid="package-implementation">
+            <div className="card" data-testid="package-automation">
               <div className="card-content">
                 <h3 className="card-title">Automation Implementation</h3>
                 <p className="card-text" style={{ marginBottom: "1.5rem" }}>
@@ -324,35 +427,9 @@ const Services = () => {
                   <Link
                     to="/contact"
                     className="btn"
-                    data-testid="package-implementation-contact"
+                    data-testid="package-automation-contact"
                   >
                     Learn More
-                  </Link>
-                </div>
-              </div>
-            </div>
-
-            <div className="card" data-testid="package-ongoing">
-              <div className="card-content">
-                <h3 className="card-title">Ongoing QA Partnership</h3>
-                <p className="card-text" style={{ marginBottom: "1.5rem" }}>
-                  Long-term partnership for continuous QA support, process
-                  improvement, and advanced automation development.
-                </p>
-                <ul style={{ color: "#666", lineHeight: "1.8" }}>
-                  <li>Dedicated QA support</li>
-                  <li>Continuous improvement</li>
-                  <li>Advanced automation</li>
-                  <li>Regular training sessions</li>
-                  <li>Flexible engagement model</li>
-                </ul>
-                <div style={{ marginTop: "2rem" }}>
-                  <Link
-                    to="/contact"
-                    className="btn"
-                    data-testid="package-ongoing-contact"
-                  >
-                    Discuss Partnership
                   </Link>
                 </div>
               </div>
@@ -368,13 +445,13 @@ const Services = () => {
       >
         <div className="container" style={{ textAlign: "center" }}>
           <h2 style={{ fontSize: "2.5rem", marginBottom: "1rem" }}>
-            Ready to Elevate Your Software Quality?
+            Ready to Build Better Software?
           </h2>
           <p
             style={{ fontSize: "1.2rem", marginBottom: "2rem", opacity: "0.9" }}
           >
-            Let's discuss how our services can help you achieve your quality
-            assurance goals and deliver better software faster.
+            Let's discuss how our web development and QA services can help you
+            achieve your goals and deliver better software faster.
           </p>
           <div
             style={{
@@ -396,7 +473,7 @@ const Services = () => {
               to="/about"
               className="btn btn-secondary-dark"
               data-testid="services-cta-about"
-              aria-label="Learn more about our QA expertise and experience"
+              aria-label="Learn more about our web development and QA expertise"
             >
               Learn About Our Expertise
             </Link>

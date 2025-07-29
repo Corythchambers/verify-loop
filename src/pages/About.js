@@ -9,9 +9,9 @@ const About = () => {
         <div className="container">
           <h1 id="about-hero-heading">About Verify Loop LLC</h1>
           <p>
-            Your trusted partner in quality assurance and automation
-            engineering. Building software confidence through expert testing and
-            proven methodologies.
+            Your trusted partner in web development and quality assurance.
+            Building software confidence through expert development, testing,
+            and proven methodologies.
           </p>
         </div>
       </section>
@@ -36,11 +36,12 @@ const About = () => {
                 }}
               >
                 Verify Loop LLC is a specialized consulting firm dedicated to
-                helping organizations achieve excellence in software quality
-                assurance and test automation. Founded with the mission to
-                bridge the gap between development speed and quality assurance,
-                we provide comprehensive QA solutions that enable businesses to
-                deliver reliable, high-quality software products.
+                helping organizations achieve excellence in web development and
+                software quality assurance. Founded with the mission to bridge
+                the gap between development speed and quality assurance, we
+                provide comprehensive web development and QA solutions that
+                enable businesses to deliver reliable, high-quality software
+                products.
               </p>
               <p
                 style={{
@@ -49,11 +50,12 @@ const About = () => {
                   lineHeight: "1.7",
                 }}
               >
-                Our approach combines deep technical expertise with strategic
-                thinking to create sustainable quality improvement programs. We
-                work closely with development teams, QA professionals, and
-                business stakeholders to implement testing strategies that align
-                with organizational goals and deliver measurable results.
+                Our approach combines deep technical expertise in both
+                development and testing with strategic thinking to create
+                sustainable quality improvement programs. We work closely with
+                development teams, QA professionals, and business stakeholders
+                to implement development and testing strategies that align with
+                organizational goals and deliver measurable results.
               </p>
             </div>
             <div>
@@ -61,10 +63,10 @@ const About = () => {
                 <div className="card-content">
                   <h3 className="card-title">Our Mission</h3>
                   <p className="card-text">
-                    To empower organizations with robust quality assurance
-                    practices and automation solutions that accelerate delivery
-                    while maintaining the highest standards of software quality
-                    and reliability.
+                    To empower organizations with robust web development
+                    capabilities and quality assurance practices that accelerate
+                    delivery while maintaining the highest standards of software
+                    quality and reliability.
                   </p>
                 </div>
               </div>
@@ -88,6 +90,26 @@ const About = () => {
             role="list"
             aria-label="Areas of expertise"
           >
+            <div
+              className="card"
+              data-testid="expertise-web-development"
+              role="listitem"
+            >
+              <div className="card-content">
+                <h3 className="card-title">Web Development</h3>
+                <ul style={{ color: "#666", lineHeight: "1.8" }}>
+                  <li>
+                    Full-stack web application development (React, Node.js,
+                    Python)
+                  </li>
+                  <li>Frontend and backend development</li>
+                  <li>API development and integration</li>
+                  <li>Database design and optimization</li>
+                  <li>Cloud deployment and DevOps</li>
+                </ul>
+              </div>
+            </div>
+
             <div
               className="card"
               data-testid="expertise-automation"
@@ -123,23 +145,6 @@ const About = () => {
                 </ul>
               </div>
             </div>
-
-            <div
-              className="card"
-              data-testid="expertise-training"
-              role="listitem"
-            >
-              <div className="card-content">
-                <h3 className="card-title">Training & Development</h3>
-                <ul style={{ color: "#666", lineHeight: "1.8" }}>
-                  <li>Team training and skill development</li>
-                  <li>Best practices workshops</li>
-                  <li>Tool-specific training programs</li>
-                  <li>Quality culture development</li>
-                  <li>Knowledge transfer and documentation</li>
-                </ul>
-              </div>
-            </div>
           </div>
         </div>
       </section>
@@ -152,13 +157,46 @@ const About = () => {
           </h2>
           <p className="section-subtitle">
             We leverage industry-leading tools and technologies to deliver
-            comprehensive testing solutions
+            comprehensive web development and testing solutions
           </p>
 
           <div className="grid grid-2">
             <div className="card">
               <div className="card-content">
-                <h3 className="card-title">Automation Frameworks</h3>
+                <h3 className="card-title">Web Development Technologies</h3>
+                <div
+                  style={{
+                    display: "grid",
+                    gridTemplateColumns: "repeat(2, 1fr)",
+                    gap: "1rem",
+                    marginTop: "1rem",
+                  }}
+                >
+                  <div>
+                    <strong>Frontend:</strong>
+                    <ul style={{ marginTop: "0.5rem", color: "#666" }}>
+                      <li>React, Vue.js, Angular</li>
+                      <li>TypeScript, JavaScript</li>
+                      <li>HTML5, CSS3, SASS</li>
+                      <li>Redux, Vuex, NgRx</li>
+                    </ul>
+                  </div>
+                  <div>
+                    <strong>Backend:</strong>
+                    <ul style={{ marginTop: "0.5rem", color: "#666" }}>
+                      <li>Node.js, Express</li>
+                      <li>Python, Django, Flask</li>
+                      <li>Java, Spring Boot</li>
+                      <li>PostgreSQL, MongoDB</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="card">
+              <div className="card-content">
+                <h3 className="card-title">Testing & Automation Tools</h3>
                 <div
                   style={{
                     display: "grid",
@@ -183,39 +221,6 @@ const About = () => {
                       <li>Postman/Newman</li>
                       <li>Insomnia</li>
                       <li>Custom frameworks</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div className="card">
-              <div className="card-content">
-                <h3 className="card-title">Supporting Technologies</h3>
-                <div
-                  style={{
-                    display: "grid",
-                    gridTemplateColumns: "repeat(2, 1fr)",
-                    gap: "1rem",
-                    marginTop: "1rem",
-                  }}
-                >
-                  <div>
-                    <strong>Languages:</strong>
-                    <ul style={{ marginTop: "0.5rem", color: "#666" }}>
-                      <li>Java</li>
-                      <li>JavaScript/TypeScript</li>
-                      <li>Python</li>
-                      <li>C#</li>
-                    </ul>
-                  </div>
-                  <div>
-                    <strong>CI/CD & Cloud:</strong>
-                    <ul style={{ marginTop: "0.5rem", color: "#666" }}>
-                      <li>Jenkins, GitHub Actions</li>
-                      <li>Docker & Kubernetes</li>
-                      <li>AWS, Azure, GCP</li>
-                      <li>BrowserStack, Sauce Labs</li>
                     </ul>
                   </div>
                 </div>
@@ -248,8 +253,8 @@ const About = () => {
                 }}
               >
                 We begin every engagement with a comprehensive assessment of
-                your current QA practices, tools, processes, and team
-                capabilities. This analysis helps us understand your unique
+                your current development and QA practices, tools, processes, and
+                team capabilities. This analysis helps us understand your unique
                 challenges and opportunities for improvement.
               </p>
 
@@ -264,9 +269,10 @@ const About = () => {
               </h3>
               <p style={{ color: "#666", lineHeight: "1.6" }}>
                 Based on our assessment, we develop tailored strategies that
-                address your specific needs, whether that's implementing
-                automation frameworks, improving testing processes, or building
-                internal QA capabilities through training and mentorship.
+                address your specific needs, whether that's building custom web
+                applications, implementing automation frameworks, improving
+                testing processes, or building internal development and QA
+                capabilities through training and mentorship.
               </p>
             </div>
             <div>
@@ -302,10 +308,10 @@ const About = () => {
                 Continuous Improvement
               </h3>
               <p style={{ color: "#666", lineHeight: "1.6" }}>
-                Quality assurance is an ongoing process. We establish metrics,
-                monitoring, and feedback loops that enable continuous
-                improvement and help you adapt to changing requirements and
-                technologies.
+                Quality assurance and development excellence are ongoing
+                processes. We establish metrics, monitoring, and feedback loops
+                that enable continuous improvement and help you adapt to
+                changing requirements and technologies.
               </p>
             </div>
           </div>
@@ -321,10 +327,11 @@ const About = () => {
               <div className="card-content">
                 <h3 className="card-title">Quality Excellence</h3>
                 <p className="card-text">
-                  We are committed to delivering the highest quality services
-                  and solutions. Our work is backed by proven methodologies,
-                  industry best practices, and a deep understanding of quality
-                  assurance principles.
+                  We are committed to delivering the highest quality web
+                  development and testing services and solutions. Our work is
+                  backed by proven methodologies, industry best practices, and a
+                  deep understanding of both development and quality assurance
+                  principles.
                 </p>
               </div>
             </div>
@@ -335,8 +342,8 @@ const About = () => {
                 <p className="card-text">
                   We view our client relationships as long-term partnerships.
                   Our success is measured by your success, and we're committed
-                  to supporting your quality assurance journey beyond individual
-                  projects.
+                  to supporting your web development and quality assurance
+                  journey beyond individual projects.
                 </p>
               </div>
             </div>
@@ -346,9 +353,9 @@ const About = () => {
                 <h3 className="card-title">Continuous Innovation</h3>
                 <p className="card-text">
                   The technology landscape is constantly evolving, and so are
-                  we. We stay current with the latest tools, techniques, and
-                  industry trends to ensure our clients benefit from
-                  cutting-edge solutions.
+                  we. We stay current with the latest web development and
+                  testing tools, techniques, and industry trends to ensure our
+                  clients benefit from cutting-edge solutions.
                 </p>
               </div>
             </div>

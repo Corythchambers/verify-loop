@@ -9,8 +9,9 @@ const Contact = () => {
         <div className="container">
           <h1 id="contact-hero-heading">Get in Touch</h1>
           <p>
-            Ready to improve your software quality? We'd love to discuss how
-            Verify Loop can help you achieve your quality assurance goals.
+            Ready to build better software? We'd love to discuss how Verify Loop
+            can help you achieve your web development and quality assurance
+            goals.
           </p>
         </div>
       </section>
@@ -154,10 +155,10 @@ const Contact = () => {
                       <strong>Your company name and role</strong>
                     </li>
                     <li>
-                      <strong>Brief description of your QA challenges</strong>
+                      <strong>Brief description of your project needs</strong>
                     </li>
                     <li>
-                      <strong>Current testing approach and tools</strong>
+                      <strong>Current technology stack and tools</strong>
                     </li>
                     <li>
                       <strong>Project timeline and scope</strong>
@@ -209,7 +210,7 @@ const Contact = () => {
       >
         <div className="container">
           <h2 className="section-title" id="service-areas-heading">
-            Ready to Discuss Your QA Needs?
+            Ready to Discuss Your Project Needs?
           </h2>
           <div
             className="grid grid-3"
@@ -218,9 +219,29 @@ const Contact = () => {
           >
             <div
               className="card"
-              data-testid="qa-assessment-cta"
+              data-testid="web-development-cta"
               role="listitem"
             >
+              <div className="card-content">
+                <h3 className="card-title">Web Development</h3>
+                <p className="card-text" style={{ marginBottom: "1.5rem" }}>
+                  Looking to build a new web application or improve an existing
+                  one? Let's discuss your requirements and technology
+                  preferences.
+                </p>
+                <div style={{ textAlign: "center" }}>
+                  <a
+                    href="mailto:info@verifyloop.net?subject=Web Development Inquiry"
+                    className="btn"
+                    data-testid="web-development-email-btn"
+                  >
+                    Start Project Discussion
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div className="card" data-testid="qa-assessment-cta">
               <div className="card-content">
                 <h3 className="card-title">QA Assessment</h3>
                 <p className="card-text" style={{ marginBottom: "1.5rem" }}>
@@ -254,25 +275,6 @@ const Contact = () => {
                     data-testid="automation-email-btn"
                   >
                     Discuss Automation
-                  </a>
-                </div>
-              </div>
-            </div>
-
-            <div className="card" data-testid="consulting-cta">
-              <div className="card-content">
-                <h3 className="card-title">General Consulting</h3>
-                <p className="card-text" style={{ marginBottom: "1.5rem" }}>
-                  Have specific QA challenges or questions? We're here to help
-                  with strategic guidance and hands-on solutions.
-                </p>
-                <div style={{ textAlign: "center" }}>
-                  <a
-                    href="mailto:info@verifyloop.net?subject=QA Consulting Inquiry"
-                    className="btn"
-                    data-testid="consulting-email-btn"
-                  >
-                    Start Conversation
                   </a>
                 </div>
               </div>
@@ -318,10 +320,11 @@ const Contact = () => {
                   What are typical project timelines?
                 </h3>
                 <p className="card-text">
-                  Project timelines vary based on scope and complexity. QA
-                  assessments typically take 1-2 weeks, automation
-                  implementations range from 6-12 weeks, and ongoing
-                  partnerships are structured around your delivery cycles.
+                  Project timelines vary based on scope and complexity. Web
+                  development projects typically range from 4-16 weeks, QA
+                  assessments take 1-2 weeks, automation implementations range
+                  from 6-12 weeks, and ongoing partnerships are structured
+                  around your delivery cycles.
                 </p>
               </div>
             </div>
