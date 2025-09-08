@@ -14,7 +14,7 @@ const Footer = () => {
       <div className="container">
         <div className="footer-content">
           <div className="footer-section">
-            <h2 id="footer-heading">Verify Loop LLC</h2>
+            <h2 id="footer-heading">Verify Loop</h2>
             <p>
               Professional Quality Assurance and Automation Engineering
               consulting services. We ensure your software quality through
