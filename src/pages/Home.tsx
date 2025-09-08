@@ -16,7 +16,7 @@ const Home = () => {
             Professional Web Development & Quality Assurance Services
           </h1>
           <p>
-            Verify Loop LLC delivers expert web development and QA consulting
+            Verify Loop delivers expert web development and QA consulting
             services to ensure your software meets the highest quality
             standards. From custom web applications to comprehensive testing
             strategies and advanced automation frameworks, we help you build

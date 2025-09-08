@@ -7,7 +7,7 @@ const About = () => {
       {/* Hero Section */}
       <section className="hero" aria-labelledby="about-hero-heading">
         <div className="container">
-          <h1 id="about-hero-heading">About Verify Loop LLC</h1>
+          <h1 id="about-hero-heading">About Verify Loop</h1>
           <p>
             Your trusted partner in web development and quality assurance.
             Building software confidence through expert development, testing,
@@ -35,7 +35,7 @@ const About = () => {
                   lineHeight: "1.7",
                 }}
               >
-                Verify Loop LLC is a specialized consulting firm dedicated to
+                Verify Loop is a specialized consulting firm dedicated to
                 helping organizations achieve excellence in web development and
                 software quality assurance. Founded with the mission to bridge
                 the gap between development speed and quality assurance, we
